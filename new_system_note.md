@@ -24,7 +24,7 @@
 - ln -sf ./配置文件 ./config.yaml
 - yacd可看了（正常的话）
 - 配置本地代理127.0.0.1:7890，yacd socks:7891
-- environment `见图片`
+- etc/environment `见图片`
 
 ## 取消sudo密码
 - sudo EDITOR=vim visudo
