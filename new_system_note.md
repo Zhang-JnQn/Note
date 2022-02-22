@@ -30,4 +30,11 @@
 - sudo EDITOR=vim visudo
 - 添加`NOPASSWD: `
 
-## 
+## others
+- deb：sudo apt install
+- run：sudo
+- chmod rwx | rwx | rwx
+    - `+x` root、group、user全部增加执行权限
+    - `777` r4 w2 x1
+- htop 任务管理器
+- sudo fdisk -l查看硬盘管理
