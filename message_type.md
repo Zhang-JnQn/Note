@@ -24,6 +24,22 @@
     ![](images/16.png)
 
 - ## sensor_msgs/LaserScan
+
     ![](images/17.png)
 
+- ## ros/time
+
+    ![](images/18.png)
+
+- ## nav_msgs/GetMap.srv
+
+    ![](images/19.png)
+
+- ## nav_msgs/OccupancyGrid
+
+    ![](images/20.png)
+
+- ## nav_mags/MapMetaDate
+
+    ![](images/21.png)
 
