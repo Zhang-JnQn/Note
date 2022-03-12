@@ -26,6 +26,10 @@
 - 配置本地代理127.0.0.1:7890，yacd socks:7891
 - etc/environment `见图片`
 
+- git config proxy: git config --global https.proxy http://127.0.0.1:7890
+
+- install gh: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+
 ## 取消sudo密码
 - sudo EDITOR=vim visudo
 - 添加`NOPASSWD: `
