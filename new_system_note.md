@@ -7,11 +7,13 @@
 
 - graphics driver ppa &emsp;添加nvidia官方库
 - 在软件更新器中选择显驱版本
-- nvidia-prime，设置独显为默认显卡
-- 在 /etc/modprobe.d/blacklist.conf 中禁用默认显卡
+- nvidia-prime，设置独显为默认显卡:
+	- sudo apt install nvidia-prime
+	- sudo prime-select nvidia
+- 在 /etc/modprobe.d/blacklist-nouveau.conf 中禁用默认显卡
 
 ## clash
-
+p
 - github : clash -> release -> amd64
 - gunzip
 - cp to /usr/bin
