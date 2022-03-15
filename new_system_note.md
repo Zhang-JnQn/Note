@@ -12,6 +12,10 @@
 	- sudo prime-select nvidia
 - 在 /etc/modprobe.d/blacklist-nouveau.conf 中禁用默认显卡
 
+## cuda cudnn
+- add PATH
+- cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+
 ## clash
 p
 - github : clash -> release -> amd64
