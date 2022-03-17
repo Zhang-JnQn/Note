@@ -38,7 +38,7 @@ p
 
 ## 取消sudo密码
 - sudo EDITOR=vim visudo
-- 添加`NOPASSWD: `
+- 添加`NOPASSWD: ` zhang-jnqn ALL=(ALL) NOPASSWD: ALL
 
 ## others
 - deb：sudo apt install
