@@ -1,6 +1,7 @@
 # 数据集训练
 [dataset.person](https://www.jianshu.com/p/c046db584a21)
 [tanToJPG](https://renzhezhilu.gitee.io/webp2jpg-online/#/)
+[rename](https://webrename.cn/)
 ## 数据集
 1. VOC数据集格式：[test.py](https://blog.csdn.net/qq_42008963/article/details/120189097)
 - ─VOCdevkit
