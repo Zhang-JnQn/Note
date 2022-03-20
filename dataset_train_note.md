@@ -1,4 +1,6 @@
 # 数据集训练
+[dataset.person](https://www.jianshu.com/p/c046db584a21)
+[tanToJPG](https://renzhezhilu.gitee.io/webp2jpg-online/#/)
 ## 数据集
 1. VOC数据集格式：[test.py](https://blog.csdn.net/qq_42008963/article/details/120189097)
 - ─VOCdevkit
@@ -120,7 +122,7 @@
 ## 训练
 - yolov5
 
-`python train.py --weights yolov5m.pt --hyp data/hyps/hyp.scratch.yaml --data data/coco128.yaml --cfg models/yolov5m.yaml --epochs 30 --batch-size 8 --name 'hair_and_glass'`
+`python3 train.py --weights yolov5m.pt --hyp data/hyps/hyp.scratch-med.yaml --data data/17th.yaml --cfg models/yolov5m.yaml --epochs 30 --batch-size 8 --name '3_19'`
 >命令行中的参数即超参数`需要在训练之前给定的参数，而不是训练得到的参数`
 1. 训练前需要修改  
 	`data/hyps/hyp.scratch.yaml` 根据训练结果修改超参数  
