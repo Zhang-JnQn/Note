@@ -4,20 +4,21 @@
 - sda4 选择 ext4 格式 &emsp;|&emsp; 挂载在 / &emsp;|&emsp; 并选择格式化掉该分区 
 
 ## graphics driver
-
 - graphics driver ppa &emsp;添加nvidia官方库
 - 在软件更新器中选择显驱版本
 - nvidia-prime，设置独显为默认显卡:
 	- sudo apt install nvidia-prime
 	- sudo prime-select nvidia
 - 在 /etc/modprobe.d/blacklist-nouveau.conf 中禁用默认显卡
+- sudo update-initramfs -u
+- reboot
+- lsmod | grep nouveau
 
 ## cuda cudnn
 - add PATH
 - cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
 
 ## clash
-p
 - github : clash -> release -> amd64
 - gunzip
 - cp to /usr/bin
@@ -35,6 +36,9 @@ p
 - git config proxy: git config --global https.proxy http://127.0.0.1:7890
 
 - install gh: https://github.com/cli/cli/blob/trunk/docs/install_linux.md
+
+## clash premium
+
 
 ## 取消sudo密码
 - sudo EDITOR=vim visudo

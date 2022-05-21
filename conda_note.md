@@ -1,7 +1,7 @@
 # conda指令
 >可以通过-n指定环境，否则在当前活跃的环境下执行相应命令
 1. 查看已有环境		`conda env list`
-2. 创建环境		`conda cteate -n <env_name>(<packages> eg.python=3.6)`
+2. 创建环境		`conda create -n <env_name>(<packages> eg.python=3.6)`
 3. 激活环境		`conda activate <env_name>`
 4. 退出环境		`conda deactivate`
 5. 删除环境		`conda env remove -n <env_name>`

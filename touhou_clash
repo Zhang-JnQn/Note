@@ -1,0 +1,1383 @@
+#!MANAGED-CONFIG https://api.touhou.center/link/QgHCEnZRnOSN06N0?clash=1
+
+#---------------------------------------------------#
+## 上次更新于：2022-04-22 19:30:06
+#---------------------------------------------------#
+
+socks-port: 7891
+redir-port: 7892
+tproxy-port: 7893
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: rule
+log-level: info
+ipv6: false
+external-controller: '127.0.0.1:9090'
+secret: ''
+routing-mark: 6666
+hosts:
+  dl.google.com: 180.163.151.161
+  dl.l.google.com: 180.163.151.161
+  update.googleapis.com: 180.163.151.161
+dns:
+  enable: true
+  listen: '0.0.0.0:53'
+  ipv6: false
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - +.msftconnecttest.com
+    - +.msftncsi.com
+    - +.xboxlive.com
+    - msftconnecttest.com
+    - 'xbox.*.microsoft.com'
+    - '*.battlenet.com.cn'
+    - '*.battlenet.com'
+    - '*.blzstatic.cn'
+    - '*.battle.net'
+  nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
+proxies:
+  -
+    name: '🇷🇺 俄罗斯 01 RT IPv6'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8704
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 629c7c20-2316-48d0-a6df-f60999a3303b.ru.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 629c7c20-2316-48d0-a6df-f60999a3303b.ru.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 629c7c20-2316-48d0-a6df-f60999a3303b.ru.node.touhou.place
+    tls: true
+  -
+    name: '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8701
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: f3b6e518-2326-463d-b1fe-fd3618b34b23.ru.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: f3b6e518-2326-463d-b1fe-fd3618b34b23.ru.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: f3b6e518-2326-463d-b1fe-fd3618b34b23.ru.node.touhou.place
+    tls: true
+  -
+    name: '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8703
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 96b02ce0-ddfd-46dd-9ef7-6c13f4c9d8ef.ru.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 96b02ce0-ddfd-46dd-9ef7-6c13f4c9d8ef.ru.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 96b02ce0-ddfd-46dd-9ef7-6c13f4c9d8ef.ru.node.touhou.place
+    tls: true
+  -
+    name: '卢森堡 01 Cogent（0.1倍率/无版权）'
+    type: vmess
+    server: 83041227-55a7-4080-b7e1-9dfc7478ddb0.gz.node.touhou.place
+    port: 8904
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: e8e65d32-5667-45ec-b8bf-8a1895c4629b.lu.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: e8e65d32-5667-45ec-b8bf-8a1895c4629b.lu.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: e8e65d32-5667-45ec-b8bf-8a1895c4629b.lu.node.touhou.place
+    tls: true
+  -
+    name: '🇹🇼 台湾 01 HiNet'
+    type: vmess
+    server: dcd0a341-43f5-4258-97ec-a1ed2ba50173.gz.node.touhou.place
+    port: 8401
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: b748096a-b0d8-4467-a550-941dd0016303.tw.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: b748096a-b0d8-4467-a550-941dd0016303.tw.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: b748096a-b0d8-4467-a550-941dd0016303.tw.node.touhou.place
+    tls: true
+  -
+    name: '🇹🇼 台湾 02 HiNet'
+    type: vmess
+    server: 83041227-55a7-4080-b7e1-9dfc7478ddb0.gz.node.touhou.place
+    port: 8402
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 5d228bfa-9dcf-435a-8dc5-a27c61c4d72c.tw.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 5d228bfa-9dcf-435a-8dc5-a27c61c4d72c.tw.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 5d228bfa-9dcf-435a-8dc5-a27c61c4d72c.tw.node.touhou.place
+    tls: true
+  -
+    name: '🇹🇷 土耳其 01 Cogent'
+    type: vmess
+    server: dcd0a341-43f5-4258-97ec-a1ed2ba50173.gz.node.touhou.place
+    port: 8901
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 099bb077-3735-4e4e-92e2-96e619666631.tr.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 099bb077-3735-4e4e-92e2-96e619666631.tr.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 099bb077-3735-4e4e-92e2-96e619666631.tr.node.touhou.place
+    tls: true
+  -
+    name: '🇧🇷 巴西 01 Ascenty'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8903
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 836063db-4304-426b-974d-c37bb076219f.br.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 836063db-4304-426b-974d-c37bb076219f.br.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 836063db-4304-426b-974d-c37bb076219f.br.node.touhou.place
+    tls: true
+  -
+    name: '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8802
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 47a91699-5e45-4820-9e88-f1f89805e520.de.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 47a91699-5e45-4820-9e88-f1f89805e520.de.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 47a91699-5e45-4820-9e88-f1f89805e520.de.node.touhou.place
+    tls: true
+  -
+    name: '🇩🇪 德国 03 Cogent/Tata IPv6'
+    type: vmess
+    server: dcd0a341-43f5-4258-97ec-a1ed2ba50173.gz.node.touhou.place
+    port: 8803
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 71b9ce6a-e230-4cb5-8cb4-7f8eaa64fb19.de.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 71b9ce6a-e230-4cb5-8cb4-7f8eaa64fb19.de.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 71b9ce6a-e230-4cb5-8cb4-7f8eaa64fb19.de.node.touhou.place
+    tls: true
+  -
+    name: '🇸🇬 新加坡 01 HE'
+    type: vmess
+    server: dcd0a341-43f5-4258-97ec-a1ed2ba50173.gz.node.touhou.place
+    port: 8603
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 53f6f863-65f9-43c5-ac0f-09a9c51b3713.sg.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 53f6f863-65f9-43c5-ac0f-09a9c51b3713.sg.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 53f6f863-65f9-43c5-ac0f-09a9c51b3713.sg.node.touhou.place
+    tls: true
+  -
+    name: '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+    type: vmess
+    server: 83041227-55a7-4080-b7e1-9dfc7478ddb0.gz.node.touhou.place
+    port: 8601
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 87a4d589-f7fa-48bc-bb2b-031ec8fd6e1f.sg.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 87a4d589-f7fa-48bc-bb2b-031ec8fd6e1f.sg.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 87a4d589-f7fa-48bc-bb2b-031ec8fd6e1f.sg.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+    type: vmess
+    server: d02a7cb4-8303-4228-bb9b-22ea778f8ce9.jp.node.touhou.place
+    port: 88
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: d02a7cb4-8303-4228-bb9b-22ea778f8ce9.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: d02a7cb4-8303-4228-bb9b-22ea778f8ce9.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: d02a7cb4-8303-4228-bb9b-22ea778f8ce9.jp.node.touhou.place
+  -
+    name: '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+    type: vmess
+    server: 13ce17f4-d00d-4d2d-a99a-ed775e43df68.jp.node.touhou.place
+    port: 88
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 13ce17f4-d00d-4d2d-a99a-ed775e43df68.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 13ce17f4-d00d-4d2d-a99a-ed775e43df68.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 13ce17f4-d00d-4d2d-a99a-ed775e43df68.jp.node.touhou.place
+  -
+    name: '🇯🇵 日本 05 NTT IPv6'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8201
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 55841cfb-8641-44b6-98d4-e28530da3047.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 55841cfb-8641-44b6-98d4-e28530da3047.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 55841cfb-8641-44b6-98d4-e28530da3047.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 06 M247 IPv6'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8202
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 40133c68-392d-4245-aea3-c9ceb16f55a7.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 40133c68-392d-4245-aea3-c9ceb16f55a7.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 40133c68-392d-4245-aea3-c9ceb16f55a7.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 08 IIJ'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8204
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 0300fb7f-47ae-403c-b42e-5c5f69a3f4ba.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 0300fb7f-47ae-403c-b42e-5c5f69a3f4ba.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 0300fb7f-47ae-403c-b42e-5c5f69a3f4ba.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 10 IIJ'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8206
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: ba3355fa-e4f3-4c04-8fed-1f9f72b65d43.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: ba3355fa-e4f3-4c04-8fed-1f9f72b65d43.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: ba3355fa-e4f3-4c04-8fed-1f9f72b65d43.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 12 IIJ IPv6'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8208
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: e7150955-922b-45a7-8243-e14f7ef4c847.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: e7150955-922b-45a7-8243-e14f7ef4c847.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: e7150955-922b-45a7-8243-e14f7ef4c847.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 14 IIJ IPv6'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8210
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 0dd80834-4dd5-45de-8878-af76080eb3c5.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 0dd80834-4dd5-45de-8878-af76080eb3c5.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 0dd80834-4dd5-45de-8878-af76080eb3c5.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 16 IIJ'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8212
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 0f26c8e0-b624-4f5f-9a3d-2476e036a987.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 0f26c8e0-b624-4f5f-9a3d-2476e036a987.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 0f26c8e0-b624-4f5f-9a3d-2476e036a987.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 18 IIJ'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8214
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: be662f35-a828-4abc-8670-2c9578b23ed3.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: be662f35-a828-4abc-8670-2c9578b23ed3.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: be662f35-a828-4abc-8670-2c9578b23ed3.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 20 IIJ'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8216
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 0e9d912b-9fd1-445e-aa12-a297e3cb33cd.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 0e9d912b-9fd1-445e-aa12-a297e3cb33cd.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 0e9d912b-9fd1-445e-aa12-a297e3cb33cd.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇯🇵 日本 22 NTT'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8218
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: e1ce08fe-e92a-445e-ae75-57425146b1c0.jp.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: e1ce08fe-e92a-445e-ae75-57425146b1c0.jp.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: e1ce08fe-e92a-445e-ae75-57425146b1c0.jp.node.touhou.place
+    tls: true
+  -
+    name: '🇷🇺 游戏 俄罗斯 01 京俄专线（20倍率）'
+    type: ss
+    server: 08cc996e-bd31-417d-9905-a33242782246.ru.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇹🇼 游戏 台湾 01 深台专线（7.5倍率）'
+    type: ss
+    server: 946afa90-3d05-450f-bcf4-397488bdc1f7.tw.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇩🇪 游戏 德国 01 京德专线（12倍率）'
+    type: ss
+    server: 6ed99fff-a1d6-4008-9762-48caabf0e703.de.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇸🇬 游戏 新加坡 01 深新专线（10倍率）'
+    type: ss
+    server: 12709d5f-633d-4332-ad1b-27b6573464b1.sg.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇯🇵 游戏 日本 02 沪日专线（14倍率）'
+    type: ss
+    server: 1a24acd6-436c-4e2f-be5a-5a49bdcbc682.jp.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇦🇺 游戏 澳大利亚 01 深澳专线（20倍率）'
+    type: ss
+    server: 2d314b1c-2f88-4095-8a23-fb81d70dafc5.au.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇺🇲 游戏 美国 01 沪美专线（12倍率）'
+    type: ss
+    server: fef84889-39c1-4952-9e66-2556320f9ad5.us.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇰🇷 游戏 韩国 01 沪韩专线（17.5倍率）'
+    type: ss
+    server: 2e56427f-c6b9-4803-9763-0db69a90aa83.kr.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇭🇰 游戏 香港 02 深港专线（7.5倍率）'
+    type: ss
+    server: f7d56ad5-e143-4f6e-ae6e-106dc2cc61f9.hk.game.node.touhou.place
+    port: 52854
+    cipher: aes-256-gcm
+    password: Bvq3slFplmqjQuQE
+    udp: true
+  -
+    name: '🇦🇺 澳大利亚 01 NTT IPv6'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8602
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 357f5334-ae92-41f1-b8bb-e16498bbfb75.au.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 357f5334-ae92-41f1-b8bb-e16498bbfb75.au.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 357f5334-ae92-41f1-b8bb-e16498bbfb75.au.node.touhou.place
+    tls: true
+  -
+    name: '🇺🇲 美国 02 GIA CN2 IPv6'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8102
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 975de493-23be-4d41-8ba8-21f205de1e60.us.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 975de493-23be-4d41-8ba8-21f205de1e60.us.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 975de493-23be-4d41-8ba8-21f205de1e60.us.node.touhou.place
+    tls: true
+  -
+    name: '🇺🇲 美国 04 GIA CN2 IPv6'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8104
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 0be32dbf-e293-495c-ad4f-1844c237e745.us.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 0be32dbf-e293-495c-ad4f-1844c237e745.us.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 0be32dbf-e293-495c-ad4f-1844c237e745.us.node.touhou.place
+    tls: true
+  -
+    name: '🇺🇲 美国 05 GIA CN2'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8105
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 2b76936e-174e-4ed7-a2cb-3e6c6b05e666.us.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 2b76936e-174e-4ed7-a2cb-3e6c6b05e666.us.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 2b76936e-174e-4ed7-a2cb-3e6c6b05e666.us.node.touhou.place
+    tls: true
+  -
+    name: '🇬🇧 英国 01 NTT/GTT'
+    type: vmess
+    server: 83041227-55a7-4080-b7e1-9dfc7478ddb0.gz.node.touhou.place
+    port: 8804
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: e0ace6a7-c2f8-46a1-b5fc-c36e4918f2c3.uk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: e0ace6a7-c2f8-46a1-b5fc-c36e4918f2c3.uk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: e0ace6a7-c2f8-46a1-b5fc-c36e4918f2c3.uk.node.touhou.place
+    tls: true
+  -
+    name: '🇦🇷 阿根廷 01 Telecom'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8902
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 10033e4c-9e60-49c7-833f-ab7d6c848d69.ar.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 10033e4c-9e60-49c7-833f-ab7d6c848d69.ar.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 10033e4c-9e60-49c7-833f-ab7d6c848d69.ar.node.touhou.place
+    tls: true
+  -
+    name: '🇦🇷 阿根廷 02 Velocom'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8905
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 176e4fbe-e757-4f7f-8ef9-c486dbc57642.ar.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 176e4fbe-e757-4f7f-8ef9-c486dbc57642.ar.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 176e4fbe-e757-4f7f-8ef9-c486dbc57642.ar.node.touhou.place
+    tls: true
+  -
+    name: '🇰🇷 韩国 01 SK（2.7倍率）'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8501
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 5754e929-85e0-4ef7-b8c1-1f881b6cac05.kr.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 5754e929-85e0-4ef7-b8c1-1f881b6cac05.kr.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 5754e929-85e0-4ef7-b8c1-1f881b6cac05.kr.node.touhou.place
+    tls: true
+  -
+    name: '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+    type: vmess
+    server: f51e0a98-bc78-4ba2-ba51-74271731fa18.hk.node.touhou.place
+    port: 88
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: f51e0a98-bc78-4ba2-ba51-74271731fa18.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: f51e0a98-bc78-4ba2-ba51-74271731fa18.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: f51e0a98-bc78-4ba2-ba51-74271731fa18.hk.node.touhou.place
+  -
+    name: '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+    type: vmess
+    server: f3d3ab72-4d0e-4b94-9649-b35f6921ab6f.hk.node.touhou.place
+    port: 88
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: f3d3ab72-4d0e-4b94-9649-b35f6921ab6f.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: f3d3ab72-4d0e-4b94-9649-b35f6921ab6f.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: f3d3ab72-4d0e-4b94-9649-b35f6921ab6f.hk.node.touhou.place
+  -
+    name: '🇭🇰 香港 07 移动/深港专线（2倍率）'
+    type: vmess
+    server: eb96b416-7c30-4b8e-b8e5-daea82aa7f4a.hk.node.touhou.place
+    port: 88
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: eb96b416-7c30-4b8e-b8e5-daea82aa7f4a.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: eb96b416-7c30-4b8e-b8e5-daea82aa7f4a.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: eb96b416-7c30-4b8e-b8e5-daea82aa7f4a.hk.node.touhou.place
+  -
+    name: '🇭🇰 香港 08 移动/深港专线（2倍率）'
+    type: vmess
+    server: 90a0561c-b997-4151-8a6b-16af40f4446d.hk.node.touhou.place
+    port: 88
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 90a0561c-b997-4151-8a6b-16af40f4446d.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 90a0561c-b997-4151-8a6b-16af40f4446d.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 90a0561c-b997-4151-8a6b-16af40f4446d.hk.node.touhou.place
+  -
+    name: '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+    type: vmess
+    server: f1604a02-cdb8-457a-8369-6a64e4922e70.zj.node.touhou.place
+    port: 8301
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 5bb57fe0-3f90-4d92-bf03-1d917e11ce7b.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 5bb57fe0-3f90-4d92-bf03-1d917e11ce7b.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 5bb57fe0-3f90-4d92-bf03-1d917e11ce7b.hk.node.touhou.place
+    tls: true
+  -
+    name: '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+    type: vmess
+    server: 4f38f6b4-bed0-40e9-aad8-72a2bc218407.zj.node.touhou.place
+    port: 8302
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 090eb41d-930f-4618-9cbc-e7f45af6e358.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 090eb41d-930f-4618-9cbc-e7f45af6e358.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 090eb41d-930f-4618-9cbc-e7f45af6e358.hk.node.touhou.place
+    tls: true
+  -
+    name: '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+    type: vmess
+    server: 98d033b8-6928-4e27-99ab-142ed34f9491.zj.node.touhou.place
+    port: 8303
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 8214318c-9d73-4d60-9539-cffec761e29a.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 8214318c-9d73-4d60-9539-cffec761e29a.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 8214318c-9d73-4d60-9539-cffec761e29a.hk.node.touhou.place
+    tls: true
+  -
+    name: '🇭🇰 香港 12 CN2 IPv6'
+    type: vmess
+    server: 83041227-55a7-4080-b7e1-9dfc7478ddb0.gz.node.touhou.place
+    port: 8304
+    uuid: 44356521-01c1-3a04-b7c8-26d0d33fd683
+    alterId: 0
+    cipher: auto
+    udp: true
+    servername: 80734281-3acd-4fc0-b9a3-e5b70d1fe385.hk.node.touhou.place
+    network: ws
+    ws-opts:
+      path: /ws
+      headers: { Host: 80734281-3acd-4fc0-b9a3-e5b70d1fe385.hk.node.touhou.place }
+    ws-path: /ws
+    ws-headers:
+      Host: 80734281-3acd-4fc0-b9a3-e5b70d1fe385.hk.node.touhou.place
+    tls: true
+proxy-groups:
+  -
+    name: '🌐 国外流量'
+    type: select
+    proxies:
+      - '♻️ 故障切换'
+      - '➡️ 直接连接'
+      - '🇷🇺 俄罗斯 01 RT IPv6'
+      - '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+      - '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+      - '卢森堡 01 Cogent（0.1倍率/无版权）'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇹🇷 土耳其 01 Cogent'
+      - '🇧🇷 巴西 01 Ascenty'
+      - '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+      - '🇩🇪 德国 03 Cogent/Tata IPv6'
+      - '🇸🇬 新加坡 01 HE'
+      - '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+      - '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 05 NTT IPv6'
+      - '🇯🇵 日本 06 M247 IPv6'
+      - '🇯🇵 日本 08 IIJ'
+      - '🇯🇵 日本 10 IIJ'
+      - '🇯🇵 日本 12 IIJ IPv6'
+      - '🇯🇵 日本 14 IIJ IPv6'
+      - '🇯🇵 日本 16 IIJ'
+      - '🇯🇵 日本 18 IIJ'
+      - '🇯🇵 日本 20 IIJ'
+      - '🇯🇵 日本 22 NTT'
+      - '🇷🇺 游戏 俄罗斯 01 京俄专线（20倍率）'
+      - '🇹🇼 游戏 台湾 01 深台专线（7.5倍率）'
+      - '🇩🇪 游戏 德国 01 京德专线（12倍率）'
+      - '🇸🇬 游戏 新加坡 01 深新专线（10倍率）'
+      - '🇯🇵 游戏 日本 02 沪日专线（14倍率）'
+      - '🇦🇺 游戏 澳大利亚 01 深澳专线（20倍率）'
+      - '🇺🇲 游戏 美国 01 沪美专线（12倍率）'
+      - '🇰🇷 游戏 韩国 01 沪韩专线（17.5倍率）'
+      - '🇭🇰 游戏 香港 02 深港专线（7.5倍率）'
+      - '🇦🇺 澳大利亚 01 NTT IPv6'
+      - '🇺🇲 美国 02 GIA CN2 IPv6'
+      - '🇺🇲 美国 04 GIA CN2 IPv6'
+      - '🇺🇲 美国 05 GIA CN2'
+      - '🇬🇧 英国 01 NTT/GTT'
+      - '🇦🇷 阿根廷 01 Telecom'
+      - '🇦🇷 阿根廷 02 Velocom'
+      - '🇰🇷 韩国 01 SK（2.7倍率）'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '🚥 其他流量'
+    type: select
+    proxies:
+      - '🌐 国外流量'
+      - '➡️ 直接连接'
+  -
+    name: '♻️ 故障切换'
+    type: fallback
+    proxies:
+      - '🇷🇺 俄罗斯 01 RT IPv6'
+      - '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+      - '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+      - '卢森堡 01 Cogent（0.1倍率/无版权）'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇹🇷 土耳其 01 Cogent'
+      - '🇧🇷 巴西 01 Ascenty'
+      - '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+      - '🇩🇪 德国 03 Cogent/Tata IPv6'
+      - '🇸🇬 新加坡 01 HE'
+      - '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+      - '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 05 NTT IPv6'
+      - '🇯🇵 日本 06 M247 IPv6'
+      - '🇯🇵 日本 08 IIJ'
+      - '🇯🇵 日本 10 IIJ'
+      - '🇯🇵 日本 12 IIJ IPv6'
+      - '🇯🇵 日本 14 IIJ IPv6'
+      - '🇯🇵 日本 16 IIJ'
+      - '🇯🇵 日本 18 IIJ'
+      - '🇯🇵 日本 20 IIJ'
+      - '🇯🇵 日本 22 NTT'
+      - '🇦🇺 澳大利亚 01 NTT IPv6'
+      - '🇺🇲 美国 02 GIA CN2 IPv6'
+      - '🇺🇲 美国 04 GIA CN2 IPv6'
+      - '🇺🇲 美国 05 GIA CN2'
+      - '🇬🇧 英国 01 NTT/GTT'
+      - '🇦🇷 阿根廷 01 Telecom'
+      - '🇦🇷 阿根廷 02 Velocom'
+      - '🇰🇷 韩国 01 SK（2.7倍率）'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+  -
+    name: '🎬 国际流媒体'
+    type: select
+    proxies:
+      - '🌐 国外流量'
+      - '➡️ 直接连接'
+      - '🇷🇺 俄罗斯 01 RT IPv6'
+      - '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+      - '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+      - '卢森堡 01 Cogent（0.1倍率/无版权）'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇹🇷 土耳其 01 Cogent'
+      - '🇧🇷 巴西 01 Ascenty'
+      - '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+      - '🇩🇪 德国 03 Cogent/Tata IPv6'
+      - '🇸🇬 新加坡 01 HE'
+      - '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+      - '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 05 NTT IPv6'
+      - '🇯🇵 日本 06 M247 IPv6'
+      - '🇯🇵 日本 08 IIJ'
+      - '🇯🇵 日本 10 IIJ'
+      - '🇯🇵 日本 12 IIJ IPv6'
+      - '🇯🇵 日本 14 IIJ IPv6'
+      - '🇯🇵 日本 16 IIJ'
+      - '🇯🇵 日本 18 IIJ'
+      - '🇯🇵 日本 20 IIJ'
+      - '🇯🇵 日本 22 NTT'
+      - '🇦🇺 澳大利亚 01 NTT IPv6'
+      - '🇺🇲 美国 02 GIA CN2 IPv6'
+      - '🇺🇲 美国 04 GIA CN2 IPv6'
+      - '🇺🇲 美国 05 GIA CN2'
+      - '🇬🇧 英国 01 NTT/GTT'
+      - '🇦🇷 阿根廷 01 Telecom'
+      - '🇦🇷 阿根廷 02 Velocom'
+      - '🇰🇷 韩国 01 SK（2.7倍率）'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '🎬 大陆流媒体国际版'
+    type: select
+    proxies:
+      - '➡️ 直接连接'
+      - '🌐 国外流量'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '🎮 Steam'
+    type: select
+    proxies:
+      - '🌐 国外流量'
+      - '➡️ 直接连接'
+      - '🇷🇺 俄罗斯 01 RT IPv6'
+      - '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+      - '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+      - '卢森堡 01 Cogent（0.1倍率/无版权）'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇹🇷 土耳其 01 Cogent'
+      - '🇧🇷 巴西 01 Ascenty'
+      - '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+      - '🇩🇪 德国 03 Cogent/Tata IPv6'
+      - '🇸🇬 新加坡 01 HE'
+      - '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+      - '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 05 NTT IPv6'
+      - '🇯🇵 日本 06 M247 IPv6'
+      - '🇯🇵 日本 08 IIJ'
+      - '🇯🇵 日本 10 IIJ'
+      - '🇯🇵 日本 12 IIJ IPv6'
+      - '🇯🇵 日本 14 IIJ IPv6'
+      - '🇯🇵 日本 16 IIJ'
+      - '🇯🇵 日本 18 IIJ'
+      - '🇯🇵 日本 20 IIJ'
+      - '🇯🇵 日本 22 NTT'
+      - '🇷🇺 游戏 俄罗斯 01 京俄专线（20倍率）'
+      - '🇹🇼 游戏 台湾 01 深台专线（7.5倍率）'
+      - '🇩🇪 游戏 德国 01 京德专线（12倍率）'
+      - '🇸🇬 游戏 新加坡 01 深新专线（10倍率）'
+      - '🇯🇵 游戏 日本 02 沪日专线（14倍率）'
+      - '🇦🇺 游戏 澳大利亚 01 深澳专线（20倍率）'
+      - '🇺🇲 游戏 美国 01 沪美专线（12倍率）'
+      - '🇰🇷 游戏 韩国 01 沪韩专线（17.5倍率）'
+      - '🇭🇰 游戏 香港 02 深港专线（7.5倍率）'
+      - '🇦🇺 澳大利亚 01 NTT IPv6'
+      - '🇺🇲 美国 02 GIA CN2 IPv6'
+      - '🇺🇲 美国 04 GIA CN2 IPv6'
+      - '🇺🇲 美国 05 GIA CN2'
+      - '🇬🇧 英国 01 NTT/GTT'
+      - '🇦🇷 阿根廷 01 Telecom'
+      - '🇦🇷 阿根廷 02 Velocom'
+      - '🇰🇷 韩国 01 SK（2.7倍率）'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '🌐 国际网站'
+    type: select
+    proxies:
+      - '🌐 国外流量'
+      - '➡️ 直接连接'
+      - '🇷🇺 俄罗斯 01 RT IPv6'
+      - '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+      - '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+      - '卢森堡 01 Cogent（0.1倍率/无版权）'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇹🇷 土耳其 01 Cogent'
+      - '🇧🇷 巴西 01 Ascenty'
+      - '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+      - '🇩🇪 德国 03 Cogent/Tata IPv6'
+      - '🇸🇬 新加坡 01 HE'
+      - '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+      - '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 05 NTT IPv6'
+      - '🇯🇵 日本 06 M247 IPv6'
+      - '🇯🇵 日本 08 IIJ'
+      - '🇯🇵 日本 10 IIJ'
+      - '🇯🇵 日本 12 IIJ IPv6'
+      - '🇯🇵 日本 14 IIJ IPv6'
+      - '🇯🇵 日本 16 IIJ'
+      - '🇯🇵 日本 18 IIJ'
+      - '🇯🇵 日本 20 IIJ'
+      - '🇯🇵 日本 22 NTT'
+      - '🇷🇺 游戏 俄罗斯 01 京俄专线（20倍率）'
+      - '🇹🇼 游戏 台湾 01 深台专线（7.5倍率）'
+      - '🇩🇪 游戏 德国 01 京德专线（12倍率）'
+      - '🇸🇬 游戏 新加坡 01 深新专线（10倍率）'
+      - '🇯🇵 游戏 日本 02 沪日专线（14倍率）'
+      - '🇦🇺 游戏 澳大利亚 01 深澳专线（20倍率）'
+      - '🇺🇲 游戏 美国 01 沪美专线（12倍率）'
+      - '🇰🇷 游戏 韩国 01 沪韩专线（17.5倍率）'
+      - '🇭🇰 游戏 香港 02 深港专线（7.5倍率）'
+      - '🇦🇺 澳大利亚 01 NTT IPv6'
+      - '🇺🇲 美国 02 GIA CN2 IPv6'
+      - '🇺🇲 美国 04 GIA CN2 IPv6'
+      - '🇺🇲 美国 05 GIA CN2'
+      - '🇬🇧 英国 01 NTT/GTT'
+      - '🇦🇷 阿根廷 01 Telecom'
+      - '🇦🇷 阿根廷 02 Velocom'
+      - '🇰🇷 韩国 01 SK（2.7倍率）'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '🏠 大陆流量'
+    type: select
+    proxies:
+      - '➡️ 直接连接'
+      - '🌐 国外流量'
+      - '🇷🇺 俄罗斯 01 RT IPv6'
+      - '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+      - '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+      - '卢森堡 01 Cogent（0.1倍率/无版权）'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇹🇷 土耳其 01 Cogent'
+      - '🇧🇷 巴西 01 Ascenty'
+      - '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+      - '🇩🇪 德国 03 Cogent/Tata IPv6'
+      - '🇸🇬 新加坡 01 HE'
+      - '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+      - '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 05 NTT IPv6'
+      - '🇯🇵 日本 06 M247 IPv6'
+      - '🇯🇵 日本 08 IIJ'
+      - '🇯🇵 日本 10 IIJ'
+      - '🇯🇵 日本 12 IIJ IPv6'
+      - '🇯🇵 日本 14 IIJ IPv6'
+      - '🇯🇵 日本 16 IIJ'
+      - '🇯🇵 日本 18 IIJ'
+      - '🇯🇵 日本 20 IIJ'
+      - '🇯🇵 日本 22 NTT'
+      - '🇷🇺 游戏 俄罗斯 01 京俄专线（20倍率）'
+      - '🇹🇼 游戏 台湾 01 深台专线（7.5倍率）'
+      - '🇩🇪 游戏 德国 01 京德专线（12倍率）'
+      - '🇸🇬 游戏 新加坡 01 深新专线（10倍率）'
+      - '🇯🇵 游戏 日本 02 沪日专线（14倍率）'
+      - '🇦🇺 游戏 澳大利亚 01 深澳专线（20倍率）'
+      - '🇺🇲 游戏 美国 01 沪美专线（12倍率）'
+      - '🇰🇷 游戏 韩国 01 沪韩专线（17.5倍率）'
+      - '🇭🇰 游戏 香港 02 深港专线（7.5倍率）'
+      - '🇦🇺 澳大利亚 01 NTT IPv6'
+      - '🇺🇲 美国 02 GIA CN2 IPv6'
+      - '🇺🇲 美国 04 GIA CN2 IPv6'
+      - '🇺🇲 美国 05 GIA CN2'
+      - '🇬🇧 英国 01 NTT/GTT'
+      - '🇦🇷 阿根廷 01 Telecom'
+      - '🇦🇷 阿根廷 02 Velocom'
+      - '🇰🇷 韩国 01 SK（2.7倍率）'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '🎬 大陆流媒体'
+    type: select
+    proxies:
+      - '🏠 大陆流量'
+      - '➡️ 直接连接'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '🏠 大陆网站'
+    type: select
+    proxies:
+      - '🏠 大陆流量'
+      - '➡️ 直接连接'
+      - '🇷🇺 俄罗斯 01 RT IPv6'
+      - '🇷🇺 俄罗斯 02 RT/TTK IPv6'
+      - '🇷🇺 俄罗斯 04 CN2 IPv6（2.75倍率）'
+      - '卢森堡 01 Cogent（0.1倍率/无版权）'
+      - '🇹🇼 台湾 01 HiNet'
+      - '🇹🇼 台湾 02 HiNet'
+      - '🇹🇷 土耳其 01 Cogent'
+      - '🇧🇷 巴西 01 Ascenty'
+      - '🇩🇪 德国 02 GIA CN2（1.5倍率）'
+      - '🇩🇪 德国 03 Cogent/Tata IPv6'
+      - '🇸🇬 新加坡 01 HE'
+      - '🇸🇬 新加坡 02 PCCW（2.4倍率）'
+      - '🇯🇵 日本 03 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 04 电信/沪日专线（3倍率）'
+      - '🇯🇵 日本 05 NTT IPv6'
+      - '🇯🇵 日本 06 M247 IPv6'
+      - '🇯🇵 日本 08 IIJ'
+      - '🇯🇵 日本 10 IIJ'
+      - '🇯🇵 日本 12 IIJ IPv6'
+      - '🇯🇵 日本 14 IIJ IPv6'
+      - '🇯🇵 日本 16 IIJ'
+      - '🇯🇵 日本 18 IIJ'
+      - '🇯🇵 日本 20 IIJ'
+      - '🇯🇵 日本 22 NTT'
+      - '🇷🇺 游戏 俄罗斯 01 京俄专线（20倍率）'
+      - '🇹🇼 游戏 台湾 01 深台专线（7.5倍率）'
+      - '🇩🇪 游戏 德国 01 京德专线（12倍率）'
+      - '🇸🇬 游戏 新加坡 01 深新专线（10倍率）'
+      - '🇯🇵 游戏 日本 02 沪日专线（14倍率）'
+      - '🇦🇺 游戏 澳大利亚 01 深澳专线（20倍率）'
+      - '🇺🇲 游戏 美国 01 沪美专线（12倍率）'
+      - '🇰🇷 游戏 韩国 01 沪韩专线（17.5倍率）'
+      - '🇭🇰 游戏 香港 02 深港专线（7.5倍率）'
+      - '🇦🇺 澳大利亚 01 NTT IPv6'
+      - '🇺🇲 美国 02 GIA CN2 IPv6'
+      - '🇺🇲 美国 04 GIA CN2 IPv6'
+      - '🇺🇲 美国 05 GIA CN2'
+      - '🇬🇧 英国 01 NTT/GTT'
+      - '🇦🇷 阿根廷 01 Telecom'
+      - '🇦🇷 阿根廷 02 Velocom'
+      - '🇰🇷 韩国 01 SK（2.7倍率）'
+      - '🇭🇰 香港 03 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 04 电信/深港专线（2.5倍率）'
+      - '🇭🇰 香港 07 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 08 移动/深港专线（2倍率）'
+      - '🇭🇰 香港 09 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 10 HKT家宽（0.1倍率）'
+      - '🇭🇰 香港 11 HKBN家宽（0.1倍率）'
+      - '🇭🇰 香港 12 CN2 IPv6'
+  -
+    name: '➡️ 直接连接'
+    type: select
+    proxies:
+      - DIRECT
+
+
+rules:
+  # > Google
+  - DOMAIN-SUFFIX,blog.google,🌐 国际网站
+  # - DOMAIN-SUFFIX,googletraveladservices.com,🌐 国际网站
+  - DOMAIN,clientservices.googleapis.com,🌐 国际网站
+  # - DOMAIN,dl.google.com,🌐 国际网站
+  # - DOMAIN,dl.l.google.com,🌐 国际网站
+  # - DOMAIN,update.googleapis.com,🌐 国际网站
+  - DOMAIN,translate.googleapis.com,🌐 国际网站
+  # >> Google Fonts API
+  - DOMAIN,fonts.googleapis.com,🌐 国际网站
+  - DOMAIN,fonts.gstatic.com,🌐 国际网站
+  # >> Firebase Cloud Messaging
+  - DOMAIN,mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt1-mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt2-mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt3-mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt4-mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt5-mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt6-mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt7-mtalk.google.com,🌐 国际网站
+  - DOMAIN,alt8-mtalk.google.com,🌐 国际网站
+  # >> Paramount+
+  # - DOMAIN,pubads.g.doubleclick.net,🌐 国际网站
+
+  # Unbreak
+  - RULE-SET,Unbreak,DIRECT
+
+  # Global Area Network
+
+  # (Streaming Media)
+  - RULE-SET,Streaming,🎬 国际流媒体
+
+  # (StreamingSE)
+  - RULE-SET,StreamingSE,🎬 大陆流媒体国际版
+
+  # (Steam)
+  - RULE-SET,Steam,🎮 Steam
+
+  # (DNS Cache Pollution) / (IP Blackhole) / (Region-Restricted Access Denied) / (Network Jitter)
+  - RULE-SET,Global,🌐 国际网站
+
+  # (StreamingCN)
+  - RULE-SET,StreamingCN,🎬 大陆流媒体
+
+  # China Area Network
+  - RULE-SET,China,🏠 大陆网站
+
+  # Local Area Network
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR,224.0.0.0/4,DIRECT
+  - IP-CIDR,fe80::/10,DIRECT
+
+  # （可选）使用来自 ipipdotnet 的 ChinaIP 以解决数据不准确的问题，使用 ChinaIP.yaml 时可禁用下列直至（包括）「GEOIP,CN」规则
+  - RULE-SET,ChinaIP,🏠 大陆流量
+  # Tencent
+  # - IP-CIDR,119.28.28.28/32,🏠 大陆流量
+  # - IP-CIDR,182.254.116.0/24,🏠 大陆流量
+  # GeoIP China
+  # - GEOIP,CN,🏠 大陆流量
+
+  - MATCH,🚥 其他流量
+
+rule-providers:
+# name: # Provider 名称
+#   type: http # http 或 file
+#   behavior: classical # 或 ipcidr、domain
+#   path: # 文件路径
+#   url: # 只有当类型为 HTTP 时才可用，您不需要在本地空间中创建新文件。
+#   interval: # 自动更新间隔，仅在类型为 HTTP 时可用
+
+  Unbreak:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Unbreak.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Unbreak.yaml
+    interval: 86400
+
+  Streaming:
+    type: http
+    behavior: classical
+    path: ./RuleSet/StreamingMedia/Streaming.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/Streaming.yaml
+    interval: 86400
+
+  StreamingSE:
+    type: http
+    behavior: classical
+    path: ./RuleSet/StreamingMedia/StreamingSE.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/StreamingSE.yaml
+    interval: 86400
+
+  StreamingCN:
+    type: http
+    behavior: classical
+    path: ./RuleSet/StreamingMedia/StreamingCN.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/StreamingMedia/StreamingCN.yaml
+    interval: 86400
+
+  Steam:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Extra/Game/Steam.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Extra/Game/Steam.yaml
+    interval: 86400
+
+  Global:
+    type: http
+    behavior: classical
+    path: ./RuleSet/Global.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/Global.yaml
+    interval: 86400
+
+  China:
+    type: http
+    behavior: classical
+    path: ./RuleSet/China.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/DivineEngine/Profiles/master/Clash/RuleSet/China.yaml
+    interval: 86400
+
+  ChinaIP:
+    type: http
+    behavior: ipcidr
+    path: ./RuleSet/Extra/ChinaIP.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt
+    interval: 86400
+
+profile:
+  store-selected: false
+  store-fake-ip: true
