@@ -167,21 +167,21 @@ message_generation
 
 9. [ROS_INFO 颜色](https://blog.csdn.net/chill_chill/article/details/123485949)
 
-- ROS_INFO_STREAM("\033[30m 黑色字 \033[0m");
-- ROS_INFO_STREAM("\033[31m 红色字 \033[0m");
-- ROS_INFO_STREAM("\033[32m 绿色字 \033[0m");
-- ROS_INFO_STREAM("\033[33m 黄色字 \033[0m");
-- ROS_INFO_STREAM("\033[34m 蓝色字 \033[0m");
-- ROS_INFO_STREAM("\033[36m 天蓝字 \033[0m");
-- ROS_INFO_STREAM("\033[37m 白色字 \033[0m");
-- ROS_INFO_STREAM("\033[40;37m 黑底白字 \033[0m");
-- ROS_INFO_STREAM("\033[41;37m 红底白字 \033[0m");
-- ROS_INFO_STREAM("\033[42;37m 绿底白字 \033[0m");
-- ROS_INFO_STREAM("\033[47;30m 白底黑字 \033[0m");
-- ROS_INFO_STREAM("\033[43;37m 黄底白字 \033[0m");
-- ROS_INFO_STREAM("\033[44;37m 蓝底白字 \033[0m");
-- ROS_INFO_STREAM("\033[45;37m 紫底白字 \033[0m");
-- ROS_INFO_STREAM("\033[46;37m 天蓝底白字 \033[0m");
+- ROS_INFO("\033[30m 黑色字 \033[0m");
+- ROS_INFO("\033[31m 红色字 \033[0m");
+- ROS_INFO("\033[32m 绿色字 \033[0m");
+- ROS_INFO("\033[33m 黄色字 \033[0m");
+- ROS_INFO("\033[34m 蓝色字 \033[0m");
+- ROS_INFO("\033[36m 天蓝字 \033[0m");
+- ROS_INFO("\033[37m 白色字 \033[0m");
+- ROS_INFO("\033[40;37m 黑底白字 \033[0m");
+- ROS_INFO("\033[41;37m 红底白字 \033[0m");
+- ROS_INFO("\033[42;37m 绿底白字 \033[0m");
+- ROS_INFO("\033[47;30m 白底黑字 \033[0m");
+- ROS_INFO("\033[43;37m 黄底白字 \033[0m");
+- ROS_INFO("\033[44;37m 蓝底白字 \033[0m");
+- ROS_INFO("\033[45;37m 紫底白字 \033[0m");
+- ROS_INFO("\033[46;37m 天蓝底白字 \033[0m");
 
 - ![](images/69.png)
 
